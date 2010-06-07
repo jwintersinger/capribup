@@ -1,0 +1,8 @@
+In backup-directories.rb, provide means of specifying more descriptive archive
+filename than that derived from basename of directory.
+  Use case: in Mephisto, directory containing uploaded images is named
+  "assets", yielding dir-assets-20080429.tar.bz2, for example. I would prefer
+  something like dir-dumbfounderment-assets-20080429.tar.bz2.
+Provide means of specifying DirectoryManagerPreset to use from command line of
+each of backup-{directories,postgresql}.rb, falling back on "sensible" if none
+specified.
